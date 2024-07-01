@@ -10,7 +10,7 @@ const useStyles = makeStyles({
 		alignItems: 'start',
 	},
 	container: {
-		maxWidth: '1024px',
+		maxWidth: '1440px',
 		width: '100%',
 		minHeight: '100vh',
 		display: 'flex',

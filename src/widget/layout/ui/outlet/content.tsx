@@ -7,12 +7,18 @@ const useStyles = makeStyles({
 		width: '100%',
 		padding: '5vh 0'
 	},
-	conteiner: {
-		borderRadius: '15px',
-		padding: '15px',
+	container: {
 		width: '100%',
 		height: '100%',
+		padding: '15px',
+		borderRadius: '15px',
 		backgroundColor: tokens.colorNeutralBackground1,
+
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'start',
+		alignItems: 'start',
+		gap: '20px'
 	}
 })
 
@@ -20,7 +26,7 @@ const ZOutlet = () => {
 	const styles = useStyles();
 	return (
 		<div className={styles.root}>
-			<div className={styles.conteiner}>
+			<div className={styles.container}>
 				<Outlet/>
 			</div>
 		</div>

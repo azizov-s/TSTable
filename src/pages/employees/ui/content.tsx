@@ -1,10 +1,15 @@
-import styles from './styles.module.scss'
+import UI from '../../../shared/ui'
+import { data, dataTableColumns } from '../../../shared/ui/table/data'
 
 function EmployeesContent() {
 	return (
-		<div className={styles.root}>
-			<p>Home Page</p>
-		</div>
+		<>
+			<UI.Searchbar title='Пользователи' />
+			<UI.Table 
+			 	data={data}
+				columns={dataTableColumns}
+			/>
+		</>
 	)
 }
 

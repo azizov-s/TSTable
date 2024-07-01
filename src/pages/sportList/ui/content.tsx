@@ -1,10 +1,15 @@
-import styles from './styles.module.scss'
+import UI from '../../../shared/ui'
+import { data2, dataTableColumns2 } from '../../../shared/ui/table/data'
 
 function SportListContent() {
 	return (
-		<div className={styles.root}>
-			<p>Home Page</p>
-		</div>
+		<>
+			<UI.Searchbar title='Спортивный лист'/>
+			<UI.Table 
+			 	data={data2}
+				columns={dataTableColumns2}
+			/>
+		</>
 	)
 }
 

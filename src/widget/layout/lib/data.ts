@@ -1,12 +1,12 @@
 export const routes = [
 	{
 		id: '1',
-		name: 'Employees',
-		path: '/'
+		name: 'Пользователи',
+		path: '/',
 	},
 	{
 		id: '2',
-		name: 'SportList',
+		name: 'Спорт. лист',
 		path: '/sport'
 	}
 ]
