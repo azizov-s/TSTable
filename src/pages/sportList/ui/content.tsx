@@ -1,5 +1,5 @@
 import UI from '../../../shared/ui'
-import { data2, dataTableColumns2 } from '../../../shared/ui/table/data'
+import { data2, dataTableColumns2 } from '../lib'
 
 function SportListContent() {
 	return (

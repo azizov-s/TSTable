@@ -1,16 +1,15 @@
 import { Body2, Button, Table, TableBody, TableCell, TableHeader, TableHeaderCell, TableRow } from '@fluentui/react-components'
 import { Edit, InfoCircle } from 'iconsax-react'
 import { memo } from 'react'
-import { ITableColumn, T } from './types'
-
-interface IProps {
+import { ITableColumn } from '../../types'
+interface IProps<T> {
 	data: T[],
 	columns: ITableColumn<T>[]
 	editClick?: (item: T) => void,
 	infoClick?: (item: T) => void,
 }
 
-const ZTable = (props: IProps) => {
+const ZTable = <T,> (props: IProps<T>) => {
 	const {columns, data} = props
 
 	return (
@@ -36,7 +35,7 @@ const ZTable = (props: IProps) => {
 					data?.map((item, index) => (
 						<TableRow key={'row' + index}>
 							{
-								columns?.map( ( column, ind ) => 
+								columns?.map(( column, ind ) => 
 									<TableCell
 										key={column.key + ind}
 								  	children={column.html ? column.html(item) :
@@ -44,7 +43,7 @@ const ZTable = (props: IProps) => {
 									/>
 								)
 							}
-							<TableCell>
+							<TableCell width='88px'>
 							 <Button 
 							  appearance='transparent' 
 							  icon={<Edit size={14}/>}/>	

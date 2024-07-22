@@ -9,7 +9,7 @@ const useStyles = makeStyles({
 	},
 	container: {
 		width: '100%',
-		height: '100%',
+		minHeight: '90vh',
 		padding: '15px',
 		borderRadius: '15px',
 		backgroundColor: tokens.colorNeutralBackground1,
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 		justifyContent: 'start',
 		alignItems: 'start',
 		gap: '20px'
-	}
+	},
 })
 
 const ZOutlet = () => {

@@ -1,5 +1,5 @@
 import '../../shared/main.css'
-import { BrowserRouter } from './router/RouterProvider'
+import BrowserRouter from './router'
 import UIKit from './ui-kit'
 
 export function Providers() {

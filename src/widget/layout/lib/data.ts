@@ -1,3 +1,4 @@
+
 export const routes = [
 	{
 		id: '1',
@@ -7,6 +8,6 @@ export const routes = [
 	{
 		id: '2',
 		name: 'Спорт. лист',
-		path: '/sport'
+		path: '/sport',
 	}
 ]

@@ -1,5 +1,5 @@
 import { Button, makeStyles, tokens } from '@fluentui/react-components'
-import { ArrowSwapHorizontal } from 'iconsax-react'
+import { Activity } from 'iconsax-react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { routes } from '../../lib'
 
@@ -11,6 +11,8 @@ const useStyles = makeStyles({
 		padding: '5vh 15px',
 	},
 	container: {
+		// width: '250px',
+		// position: 'fixed',
 		position: 'sticky',
 		height: '90vh',
 		padding: '15px',
@@ -35,20 +37,20 @@ const useStyles = makeStyles({
 
 const SideBar = () => {
 	const styles = useStyles();
-	const { pathname } = useLocation();
 	const navigate = useNavigate();
+	const { pathname } = useLocation();
 
 	return (
 		<div className={styles.root}>
 			<div className={styles.container}>
 				{
-					routes.map((route) => (
+					routes.map((Route) => (
 						<Button
-							key={route.id}
-							icon={<ArrowSwapHorizontal />}
-							children={route.name}
-							onClick={() => navigate(route.path)}
-							appearance={pathname === route.path ? 'primary' : 'transparent'}
+							key={Route.id}
+							icon={<Activity/>}
+							children={Route.name}
+							onClick={() => navigate(Route.path)}
+							appearance={pathname === Route.path ? 'primary' : 'transparent'}
 						/>
 					))
 				}
