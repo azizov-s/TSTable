@@ -19,3 +19,9 @@
 		const LockStates = 'locked' | 'unlocked';		
 
 	Обобщения(Generic) - 
+
+	https://swr.vercel.app/docs/error-handling
+	https://preactjs.com/guide/v10/signals/
+	https://swr.vercel.app/ru/docs/getting-started
+	
+https://swr.vercel.app/docs/error-handling
